@@ -116,8 +116,33 @@
     display: flex;
     justify-content: center;
     padding: 0 15px;
-    margin: 60px 0;
+    margin: 60px auto;
   }
+  
+  .burger__menu,
+  .burger__menu::before,
+  .burger__menu::after {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    z-index: 3;
+    right: 50px;  
+    top:40px; 
+    cursor: pointer;
+  }
+  .burger__menu::before {
+    content: "";
+    top: -9px;
+    right: -1px;
+  }
+  .burger__menu::after {
+    content: "";
+    top: 9px;
+    right: -1px;
+  }
+  
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation : landscape) {
@@ -172,6 +197,31 @@
     padding: 0 15px;
     margin: 60px 0;
   }
+
+  .burger__menu,
+  .burger__menu::before,
+  .burger__menu::after {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    z-index: 3;
+    right: 50px;  
+    top:40px; 
+    cursor: pointer;
+  }
+  .burger__menu::before {
+    content: "";
+    top: -9px;
+    right: -1px;
+  }
+  .burger__menu::after {
+    content: "";
+    top: 9px;
+    right: -1px;
+  }
+
 }
 
 @media (max-width:640px) and (orientation : portrait) {
@@ -230,6 +280,30 @@
   .main__container:last-child {
     margin-bottom: 60px;
   }
+
+  .burger__menu,
+  .burger__menu::before,
+  .burger__menu::after {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    z-index: 3;
+    right: 50px;  
+    top:40px; 
+    cursor: pointer;
+  }
+  .burger__menu::before {
+    content: "";
+    top: -9px;
+    right: -1px;
+  }
+  .burger__menu::after {
+    content: "";
+    top: 9px;
+    right: -1px;
+  }
 }
 
 
@@ -281,6 +355,30 @@
     display:flex;
     flex-direction: column;
     align-items:center;
+  }
+
+  .burger__menu,
+  .burger__menu::before,
+  .burger__menu::after {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    z-index: 3;
+    right: 50px;  
+    top:40px; 
+    cursor: pointer;
+  }
+  .burger__menu::before {
+    content: "";
+    top: -9px;
+    right: -1px;
+  }
+  .burger__menu::after {
+    content: "";
+    top: 9px;
+    right: -1px;
   }
 }
 
@@ -567,6 +665,7 @@ h4 {
 .form__search {
   margin-top: 62px;
   display: flex;
+  padding: 0 5px;
 }
 
 .search__field {
@@ -637,6 +736,7 @@ h4 {
 
 .email__head {
   height: 110px;
+  padding: 0 5px;
 }
 
 .email__hint {
@@ -810,6 +910,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items:center;
+  visibility: hidden;
 }
 
 .popup__content {
