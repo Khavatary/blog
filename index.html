@@ -34,7 +34,7 @@
             d="M50,3.6v2.7h-7v3.1h6.2v2.7H43v3.1h7.2v2.7h-9.9V3.6H50z M45.9,2.6h-1.7L45.8,0h3L45.9,2.6z" />
           <path class="st1" d="M71.5,3v14.9h-2.8v-6.8L64,17.7l0,0l-4.5-6.2v6.4h-2.7V3l0,0L64,13.3L71.5,3L71.5,3z" />
           <path class="st1" d="M81.6,3.6v14.3h-2.8V3.6H81.6z" />
-        </svg> -->
+        </svg>
       </a>
       <nav class="header__navigation">
         <ul class="header__list">
@@ -136,7 +136,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>10 мест, ради которых стоит проснуться на рассвете</h2>
+            <h2 class="cont__header">10 мест, ради которых стоит проснуться на рассвете</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -164,7 +164,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>йога для начинающих в домашних условиях</h2>
+            <h2 class="cont__header">йога для начинающих в домашних условиях</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -188,7 +188,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>лучшие музыкальные фестивали этого лета</h2>
+            <h2 class="cont__header">лучшие музыкальные фестивали этого лета</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -218,7 +218,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>наукоёмкий подход к кулинарии</h2>
+            <h2 class="cont__header">наукоёмкий подход к кулинарии</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -248,7 +248,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>делаем модные принты на подушках для интерьера</h2>
+            <h2 class="cont__header">делаем модные принты на подушках для интерьера</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -277,7 +277,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>как первый раз отправиться в горы?</h2>
+            <h2 class="cont__header">как первый раз отправиться в горы?</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -305,7 +305,7 @@
             </ul>
           </div>
           <a class="cont__head_link" href="#0">
-            <h2>наукоёмкий подход к кулинарии</h2>
+            <h2 class="cont__header">наукоёмкий подход к кулинарии</h2>
           </a>
           <div class="cont__date_count">
             <time class="main__date" datetime="2019-06-10">10 июня 2019</time>
@@ -392,7 +392,7 @@
           </div>
         </article>
         <form action="#" class="form__search">
-          <label for="#">
+          <label class="label__search" for="#">
             <span class="search__hint">Поле ввода</span>
             <input type="search" class="search__field" placeholder="Найти..." alt="поле поиска">
           </label>
@@ -471,7 +471,14 @@
   </div>
   <section class="products__block">
     <article class="product__block">
-      <div class="product__img product__img_first"></div>
+      <div class="product__img">
+        <picture class="product__picture">
+          <source media="(min-width: 1201px)" srcset="/images/shop-item-desk1.jpg">
+          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="/images/shop-item-tablet1.jpg">
+          <source media="(max-width: 640px)" srcset="/images/shop-item-mobile1.jpg">
+          <img class="product__position" src="/images/shop-item-desk1.jpg" alt="Подушка">
+        </picture>
+      </div>
       <div class="product__cont">
         <a href="#0" class="cont__head_link">
           <h2 class="product__head">подушки на диван</h2>
@@ -483,12 +490,20 @@
             <p class="old__price">1000 ₽</p>
             <p class="new__price">800 ₽</p>
           </div>
-          <button class="product__button" alt="Перейти в магазин">в магазин</button>
+          <button class="product__button" alt="Перейти в магазин"><a class="product__button_link" href="#0">в
+              магазин</a></button>
         </div>
       </div>
     </article>
     <article class="product__block">
-      <div class="product__img product__img_second"></div>
+      <div class="product__img">
+        <picture class="product__picture">
+          <source media="(min-width: 1201px)" srcset="/images/shop-item-desk2.jpg">
+          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="/images/shop-item-tablet2.jpg">
+          <source media="(max-width: 640px)" srcset="/images/shop-item-mobile2.jpg">
+          <img class="product__position" src="/images/shop-item-desk2.jpg" alt="Игрушка">
+        </picture>
+      </div>
       <div class="product__cont">
         <a href="#0" class="cont__head_link">
           <h2 class="product__head">кукла «зайчик»</h2>
@@ -499,12 +514,20 @@
           <div>
             <p class="new__price">3500 ₽</p>
           </div>
-          <button class="product__button" alt="Перейти в магазин">в магазин</button>
+          <button class="product__button" alt="Перейти в магазин"><a class="product__button_link" href="#0">в
+              магазин</a></button>
         </div>
       </div>
     </article>
     <article class="product__block">
-      <div class="product__img product__img_third"></div>
+      <div class="product__img">
+        <picture class="product__picture">
+          <source media="(min-width: 1201px)" srcset="/images/shop-item-desk3.jpg">
+          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="/images/shop-item-tablet3.jpg">
+          <source media="(max-width: 640px)" srcset="/images/shop-item-mobile3.jpg">
+          <img class="product__position" src="/images/shop-item-desk3.jpg" alt="Рамка">
+        </picture>
+      </div>
       <div class="product__cont">
         <a href="#0" class="cont__head_link">
           <h2 class="product__head">шестиугольная рама</h2>
@@ -517,13 +540,14 @@
             <p class="old__price">500 ₽</p>
             <p class="new__price">400 ₽</p>
           </div>
-          <button class="product__button" alt="Перейти в магазин">в магазин</button>
+          <button class="product__button" alt="Перейти в магазин"><a class="product__button_link" href="#0">в
+              магазин</a></button>
         </div>
       </div>
     </article>
   </section>
 
-  <div class="popup__conteiner" hidden>
+  <div class="popup__conteiner" hi>
     <div class="popup__content">
       <div class="popup__exit"></div>
       <div class="name__block">
@@ -533,11 +557,11 @@
           </h2>
         </a>
       </div>
-      <p class="cont__body popup__quest">Как часто вы заходите на сайт?</p>
-      <select class="select" id="form__time" name="time">
-        <option value="visiting">Почти каждый день</option>
-      </select>
       <form class="popup__radio">
+        <p class="cont__body popup__quest">Как часто вы заходите на сайт?</p>
+        <select class="select" id="form__time" name="time">
+          <option value="visiting">Почти каждый день</option>
+        </select>
         <p class="cont__body popup__quest">Вы подписаны на e-mail рассылку?</p>
         <div class="popup__radio_email">
           <label>
@@ -552,6 +576,7 @@
         <p class="cont__body popup__quest">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
         <textarea class="popup__textarea">Может, больше рецептов?</textarea>
         <button class="popup__submit" type="submit">отправить</button>
+      </form>
     </div>
   </div>
 
