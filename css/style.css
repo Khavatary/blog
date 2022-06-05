@@ -888,14 +888,14 @@ h4 {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  background-image: url("/svg/form-empty-circle.svg");
+  background-image: url("svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
 }
 
 .popup__variant:checked~.popup__text::before {
-  background-image: url("/svg/form-circle.svg");
+  background-image: url("svg/form-circle.svg");
 }
 
 .popup__variant {
@@ -910,7 +910,7 @@ h4 {
 
 .popup__exit:before {
   content: '';
-  background: url("/svg/form-x.svg") no-repeat;
+  background: url("svg/form-x.svg") no-repeat;
   position: absolute;
   z-index: 2;
   top: -20px;
