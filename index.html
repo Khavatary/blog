@@ -65,11 +65,9 @@
     <h1 class="header__title">блог о творчестве, спорте, и образе жизни</h1>
   </header>
   <div class="name__block">
-    <a class="cont__head_link" href="#">
       <h2 class="trend__head_link">
         сейчас в тренде
       </h2>
-    </a>
   </div>
 
   <section class="body__trend">
@@ -125,7 +123,7 @@
     <main>
       <article class="main__container">
         <div class="main__container_img">
-          <img src="images/last-post1.jpg" alt="лучшее место для прогулок по пляжу">
+          <img class="main__img" src="images/last-post1.jpg" alt="лучшее место для прогулок по пляжу">
         </div>
         <div>
           <div class="cont__tag">
@@ -294,7 +292,7 @@
       </article>
       <article class="main__container">
         <div class="main__container_img">
-          <img src="images/last-post4.jpg" alt="вкусная и здоровая еда">
+          <img class="main__img" src="images/last-post4.jpg" alt="вкусная и здоровая еда">
         </div>
         <div>
           <div class="cont__tag">
@@ -323,11 +321,9 @@
     <aside>
       <section class="aside__block">
         <div class="name__block">
-          <a class="cont__head_link" href="#0">
             <h3>
               новые посты
             </h3>
-          </a>
         </div>
         <article class="aside__post">
           <div class="post__image">
@@ -406,11 +402,9 @@
       </section>
       <section class="aside__block">
         <div class="name__block">
-          <a class="cont__head_link" href="#0">
             <h3>
               рассылка
             </h3>
-          </a>
         </div>
         <form action="#" class="email__head">
           <label for="#">
@@ -422,11 +416,9 @@
       </section>
       <section class="aside__block">
         <div class="name__block">
-          <a class="cont__head_link" href="#0">
             <h3>
               теги
             </h3>
-          </a>
         </div>
         <ul class="tag__list_head">
           <li><a class="tag__list_link" href="#0">fashion</a></li>
@@ -466,11 +458,9 @@
   </div>
 
   <div class="name__block">
-    <a class="cont__head_link" href="#0">
       <h2 class="trend__head_link">
         наши изделия
       </h2>
-    </a>
   </div>
   <section class="products__block">
     <article class="product__block">
@@ -483,9 +473,7 @@
         </picture>
       </div>
       <div class="product__cont">
-        <a href="#0" class="cont__head_link">
           <h2 class="product__head">подушки на диван</h2>
-        </a>
         <p class="cont__body cont__product">Набор из двух подушек с модными принтами. Видео о создании <a
             class="product__body_link" href="#0">здесь</a>.</p>
         <div class="product__buy">
@@ -493,8 +481,8 @@
             <p class="old__price">1000 ₽</p>
             <p class="new__price">800 ₽</p>
           </div>
-          <button class="product__button" alt="Перейти в магазин"><a class="product__button_link" href="#0">в
-              магазин</a></button>
+          <div class="product__button" alt="Перейти в магазин"><span class="product__button_text">в
+              магазин</span>
         </div>
       </div>
     </article>
@@ -508,17 +496,16 @@
         </picture>
       </div>
       <div class="product__cont">
-        <a href="#0" class="cont__head_link">
           <h2 class="product__head">кукла «зайчик»</h2>
-        </a>
         <p class="cont__body cont__product">Интересная рукодельная кукла «Зайчик», созданию которой посвящена <a
             class="product__body_link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
         <div class="product__buy">
           <div>
             <p class="new__price">3500 ₽</p>
           </div>
-          <button class="product__button" alt="Перейти в магазин"><a class="product__button_link" href="#0">в
-              магазин</a></button>
+          <div class="product__button" alt="Перейти в магазин"><span class="product__button_text">в
+            магазин</span>
+      </div>
         </div>
       </div>
     </article>
@@ -532,9 +519,7 @@
         </picture>
       </div>
       <div class="product__cont">
-        <a href="#0" class="cont__head_link">
           <h2 class="product__head">шестиугольная рама</h2>
-        </a>
         <p class="cont__body cont__product">Необычная рамка для украшения дома из видео <a class="product__body_link"
             href="#0">«Как
             сделать рамку из подручных средств за 30 минут»</a></p>
@@ -543,22 +528,23 @@
             <p class="old__price">500 ₽</p>
             <p class="new__price">400 ₽</p>
           </div>
-          <button class="product__button" alt="Перейти в магазин"><a class="product__button_link" href="#0">в
-              магазин</a></button>
+          <div class="product__button" alt="Перейти в магазин"><span class="product__button_text">в
+            магазин</span>
+      </div>
         </div>
       </div>
     </article>
   </section>
 
 <div class="popup__conteiner">
-    <div class="popup__content">
-      <div class="popup__exit"></div>
+  <div class="popup__exit_cont">
+    <div class="popup__exit"></div>
+      <div class="popup__content">
+      
       <div class="name__block">
-        <a class="cont__head_link" href="#0">
           <h2 class="trend__head_link">
             ваш фидбек
           </h2>
-        </a>
       </div>
       <form class="popup__radio">
         <p class="cont__body popup__quest">Как часто вы заходите на сайт?</p>
@@ -577,10 +563,11 @@
           </label>
         </div>
         <p class="cont__body popup__quest">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-        <textarea class="popup__textarea">Может, больше рецептов?</textarea>
+        <textarea class="popup__textarea" placeholder="Может, больше рецептов?"></textarea>
         <button class="popup__submit" type="submit">отправить</button>
       </form>
-    </div>
+      </div>
+  </div>
 </div>
 
   <footer>
