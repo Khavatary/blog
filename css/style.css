@@ -913,8 +913,9 @@ h4 {
   background-color: #b59f5b;
   color: white;
   text-decoration: none;
-  padding-left: 20px;
+  text-align: center;
   padding-top: 10px;
+  line-height: 25px;
 }
 
 .product__button:active {
